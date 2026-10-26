@@ -12,104 +12,7 @@
 <meta property="og:url" content="https://DavidAPF.github.io/D-A-Global-OS/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo.png">
-<style>
-:root {
-	--fondo: #070d1a;
-	--fondo-2: #0c1628;
-	--tarjeta: #101d33;
-	--borde: #1d2f4f;
-	--texto: #e8eef8;
-	--suave: #9fb0c9;
-	--azul: #2f7bff;
-	--verde: #5ad13b;
-	--oro: #f2c14e;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-	margin: 0;
-	background: var(--fondo);
-	color: var(--texto);
-	font: 17px/1.6 system-ui, -apple-system, "Segoe UI", "Noto Sans", Roboto, sans-serif;
-}
-a { color: var(--verde); }
-.ancho { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-
-/* Barra superior */
-nav { position: sticky; top: 0; z-index: 10; background: rgba(7,13,26,.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--borde); }
-nav .ancho { display: flex; align-items: center; justify-content: space-between; height: 60px; }
-.marca { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--texto); text-decoration: none; }
-.marca img { width: 34px; height: 34px; border-radius: 8px; }
-nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; }
-nav ul a { color: var(--suave); text-decoration: none; font-size: 15px; }
-nav ul a:hover { color: var(--texto); }
-
-/* Portada */
-.portada { position: relative; overflow: hidden; padding: 90px 0 80px; text-align: center; }
-.portada::before {
-	content: ""; position: absolute; inset: -40% -10% auto; height: 120%;
-	background: radial-gradient(closest-side, rgba(47,123,255,.35), transparent 70%),
-	            radial-gradient(closest-side at 70% 60%, rgba(90,209,59,.18), transparent 70%);
-	z-index: -1;
-}
-.portada img.logo { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 20px 60px rgba(47,123,255,.4); }
-.etiqueta { display: inline-block; margin: 26px 0 10px; padding: 4px 14px; border: 1px solid var(--borde); border-radius: 99px; color: var(--suave); font-size: 14px; }
-h1 { font-size: clamp(34px, 6vw, 60px); line-height: 1.1; margin: 10px 0 18px; letter-spacing: -.02em; }
-h1 span { background: linear-gradient(90deg, var(--azul), var(--verde)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.portada p.lema { max-width: 680px; margin: 0 auto 34px; color: var(--suave); font-size: 19px; }
-.botones { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-.btn { display: inline-block; padding: 15px 30px; border-radius: 12px; font-weight: 700; text-decoration: none; background: linear-gradient(90deg, var(--azul), #1f9d6b); color: #fff; box-shadow: 0 10px 30px rgba(47,123,255,.35); }
-.btn:hover { filter: brightness(1.1); }
-.btn-sec { background: transparent; border: 1px solid var(--borde); box-shadow: none; color: var(--texto); }
-.btn-off { background: var(--tarjeta); color: var(--suave); box-shadow: none; cursor: default; }
-.nota { margin-top: 16px; color: var(--suave); font-size: 14px; }
-
-/* Secciones */
-section { padding: 70px 0; }
-section.alterna { background: var(--fondo-2); border-top: 1px solid var(--borde); border-bottom: 1px solid var(--borde); }
-h2 { font-size: clamp(26px, 4vw, 38px); text-align: center; margin: 0 0 12px; }
-.sub { text-align: center; color: var(--suave); max-width: 640px; margin: 0 auto 44px; }
-.rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
-.tarjeta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 16px; padding: 24px; }
-.tarjeta .icono { font-size: 30px; }
-.tarjeta h3 { margin: 10px 0 6px; font-size: 19px; }
-.tarjeta p { margin: 0; color: var(--suave); font-size: 15.5px; }
-
-/* Capturas */
-.capturas { display: grid; grid-template-columns: 1.6fr 1fr; gap: 18px; align-items: center; }
-@media (max-width: 760px) { .capturas { grid-template-columns: 1fr; } }
-.capturas figure { margin: 0; }
-.capturas img { width: 100%; border-radius: 12px; border: 1px solid var(--borde); display: block; }
-.capturas figcaption { color: var(--suave); font-size: 14px; margin-top: 8px; text-align: center; }
-
-/* Pasos */
-.pasos { counter-reset: paso; }
-.pasos .tarjeta { position: relative; padding-top: 52px; }
-.pasos .tarjeta::before {
-	counter-increment: paso; content: counter(paso);
-	position: absolute; top: 18px; left: 24px; width: 28px; height: 28px; border-radius: 50%;
-	background: var(--verde); color: #04110a; font-weight: 800; display: grid; place-items: center; font-size: 15px;
-}
-code, pre { font-family: ui-monospace, "Cascadia Code", "DejaVu Sans Mono", monospace; }
-pre { background: #050a14; border: 1px solid var(--borde); border-radius: 10px; padding: 14px 16px; overflow-x: auto; font-size: 14px; color: #cfe3ff; }
-.req { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 30px; }
-.req span { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 99px; padding: 6px 14px; font-size: 14px; color: var(--suave); }
-
-/* Preguntas */
-details { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
-summary { cursor: pointer; font-weight: 600; }
-details p { color: var(--suave); margin: 10px 0 0; }
-.preguntas { max-width: 780px; margin: 0 auto; }
-
-footer { padding: 40px 0; text-align: center; color: var(--suave); font-size: 14px; border-top: 1px solid var(--borde); }
-footer a { color: var(--suave); }
-
-@media (max-width: 640px) {
-	nav ul { display: none; }
-	.portada { padding: 60px 0 50px; }
-	section { padding: 50px 0; }
-}
-</style>
+<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
@@ -118,7 +21,9 @@ footer a { color: var(--suave); }
 		<a class="marca" href="#"><img src="logo.png" alt="">D&amp;A Global OS</a>
 		<ul>
 			<li><a href="#funciones">Funciones</a></li>
+			<li><a href="#comparar">Comparar</a></li>
 			<li><a href="#instalar">Instalar</a></li>
+			<li><a href="novedades.html">Novedades</a></li>
 			<li><a href="#preguntas">Preguntas</a></li>
 			<li><a href="https://github.com/DavidAPF/D-A-Global-OS">GitHub</a></li>
 		</ul>
@@ -156,7 +61,32 @@ footer a { color: var(--suave); }
 	</div>
 </section>
 
-<section>
+<section id="comparar">
+	<div class="ancho">
+		<h2>D&amp;A Global OS frente a Windows 11</h2>
+		<p class="sub">Sin letra pequeña: también te decimos en qué gana Windows.</p>
+		<div class="tabla-envoltura">
+			<table class="comparar">
+				<thead><tr><th></th><th class="nuestro">D&amp;A Global OS</th><th>Windows 11</th></tr></thead>
+				<tbody>
+					<tr><td>Precio</td><td class="si">Gratis, para siempre</td><td class="no">Licencia de pago</td></tr>
+					<tr><td>Cuenta obligatoria</td><td class="si">No hace falta ninguna</td><td class="no">Pide una cuenta de Microsoft al instalar</td></tr>
+					<tr><td>Anuncios y apps no pedidas</td><td class="si">Ninguno</td><td class="no">Sugerencias y anuncios en el menú Inicio</td></tr>
+					<tr><td>Tus datos</td><td class="si">Se quedan en tu equipo</td><td class="no">Envía datos de diagnóstico a Microsoft</td></tr>
+					<tr><td>Inteligencia artificial</td><td class="si">Incluida y funciona sin internet</td><td class="medio">Copilot, solo con internet</td></tr>
+					<tr><td>Virus</td><td class="si">Los virus de Windows no le afectan</td><td class="no">El sistema más atacado del mundo</td></tr>
+					<tr><td>Equipos antiguos</td><td class="si">Funciona en equipos de hace 10 años</td><td class="no">Exige TPM 2.0 y procesadores de 2018 en adelante</td></tr>
+					<tr><td>Actualizaciones</td><td class="si">Con un clic, cuando tú quieras</td><td class="no">Reinicios obligatorios</td></tr>
+					<tr><td>Apps de Android</td><td class="si">Sí</td><td class="no">Ya no (Microsoft lo retiró en 2025)</td></tr>
+					<tr><td>Programas y juegos de Windows</td><td class="medio">Muchos funcionan, no todos</td><td class="si">Todos</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="aclaracion">¿Dependes de un programa concreto? Pruébalo primero desde el USB, sin instalar nada.</p>
+	</div>
+</section>
+
+<section class="alterna">
 	<div class="ancho">
 		<h2>Así se ve</h2>
 		<p class="sub">Capturas reales del sistema.</p>
@@ -203,7 +133,7 @@ footer a { color: var(--suave); }
 <footer>
 	<div class="ancho">
 		<p><strong>D&amp;A Global OS</strong> · Versión 26.04.1</p>
-		<p>SHA256 de la ISO: <code>9381d6af07db885680d449999ff77e7eb4b1d567f2be6c4298be5d343adae8e1</code><br><a href="https://github.com/DavidAPF/D-A-Global-OS">Código y repositorio en GitHub</a> · <a href="https://github.com/DavidAPF/D-A-Global-OS/issues">Reportar un problema</a></p>
+		<p>SHA256 de la ISO: <code>9381d6af07db885680d449999ff77e7eb4b1d567f2be6c4298be5d343adae8e1</code><br><a href="novedades.html">Novedades</a> · <a href="https://github.com/DavidAPF/D-A-Global-OS">Código y repositorio en GitHub</a> · <a href="https://github.com/DavidAPF/D-A-Global-OS/issues">Reportar un problema</a></p>
 		<p>Basado en Ubuntu y KDE Plasma. Ubuntu es una marca de Canonical Ltd.; KDE es una marca de KDE e.V. Este proyecto no está afiliado a ellos.</p>
 	</div>
 </footer>

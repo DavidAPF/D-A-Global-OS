@@ -4,26 +4,26 @@ Hash: SHA512
 Architectures: amd64
 Codename: resolute
 Components: main
-Date: Mon, 26 Oct 2026 03:43:48 +0000
+Date: Mon, 26 Oct 2026 03:49:39 +0000
 Label: D&A Global OS
 Origin: D&A Global OS
 Suite: resolute
 MD5Sum:
  b0017254b464e8d08ebd151063cfb7bc             4021 main/binary-amd64/Packages
- be272c902741618cb98c7584568f5023             2072 main/binary-amd64/Packages.gz
+ da3258c72386c0376e3192d95e18463b             2072 main/binary-amd64/Packages.gz
 SHA1:
  cac636bbb639b944d0266614e21accaf5cae8723             4021 main/binary-amd64/Packages
- 1b5912ec62764f16d0c292660d1d98a1e93541ff             2072 main/binary-amd64/Packages.gz
+ 52db8bb271ab3a29a083c356686fad273b5da1a6             2072 main/binary-amd64/Packages.gz
 SHA256:
  fe467990ac13c00b04055fdd4aabcae0b0cc3e0b5be0a0482c52db90abce3820             4021 main/binary-amd64/Packages
- 9ef08aea77a8ff8beaa51cef80ccef0f81932a10eaabf8da9d22889818d3e976             2072 main/binary-amd64/Packages.gz
+ 0384a90082678970e69360e0337174a78cf02046a5ae85bcb21dd584669fb5b0             2072 main/binary-amd64/Packages.gz
 SHA512:
  0820c515b63cbc008b692ddd891d491a66fb25a49f1c4f499945e918708aabfe5c49e987a1de27c2eaebec0f609859f5caf51f4e6ceea9af483b6e67ddb53d89             4021 main/binary-amd64/Packages
- c35a0bbd8763374ba084f711c3e55b6cfe6e575d4e0a42dd1db1412a89fac3a8e20d8acd79f582c6bb1b71d5b456e53c0c05d1b3e2ddef940c1b3ffab4ccae3c             2072 main/binary-amd64/Packages.gz
+ 9756d8f7582b3f0cb6718873e50216450ef3ea215d672174452ed5e2c2f4ecfbb13c6b6db5c874b345caae5db3af3ab97c20fec04219fb9cf36673024b64e252             2072 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQR0fruRf3QbR+JiTlzBbBYvGTIb4gUCat7MdAAKCRDBbBYvGTIb
-4valAQCWmcksO2TbLA6ZYG8kEs0IzYd8n9bsba8y6RPQupdifgEA6pK8L9VBVnuX
-fT09Us5YQhtqOBDy1ty5yg6/IFMzUw4=
-=Qc/q
+iHUEARYKAB0WIQR0fruRf3QbR+JiTlzBbBYvGTIb4gUCat7N0wAKCRDBbBYvGTIb
+4upAAQCKCOBwXsvVIQKpXSIu9RJLFB0E09SYo55dM8/YUpMMEgEApBh3qquIQMcT
+KKcOFm/MRQEomP86JEbI2E7inl91bgs=
+=gNJT
 -----END PGP SIGNATURE-----

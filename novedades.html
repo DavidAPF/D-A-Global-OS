@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Novedades de D&amp;A Global OS</title>
+<meta name="description" content="Qué trae cada versión de D&amp;A Global OS.">
+<meta property="og:title" content="Novedades de D&amp;A Global OS">
+<meta property="og:description" content="Qué trae cada versión de D&amp;A Global OS.">
+<meta property="og:image" content="https://DavidAPF.github.io/D-A-Global-OS/compartir.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<nav>
+	<div class="ancho">
+		<a class="marca" href="index.html"><img src="logo.png" alt="">D&amp;A Global OS</a>
+		<ul>
+			<li><a href="index.html#funciones">Funciones</a></li>
+			<li><a href="index.html#comparar">Comparar</a></li>
+			<li><a href="index.html#instalar">Instalar</a></li>
+			<li><a href="https://github.com/DavidAPF/D-A-Global-OS">GitHub</a></li>
+		</ul>
+	</div>
+</nav>
+
+<header class="cabecera-pagina">
+	<div class="ancho">
+		<h1>Novedades</h1>
+		<p class="sub">Qué trae cada versión. Si ya tienes el sistema instalado, las recibes con «Actualizar» en Discover.</p>
+	</div>
+</header>
+
+<section>
+	<div class="ancho">
+
+		<!-- Cada versión nueva va ARRIBA, copiando un bloque <article> -->
+
+		<article class="version" id="v26.04.1">
+			<h2>26.04.1: primera versión pública</h2>
+			<p class="fecha">25 de octubre de 2026</p>
+
+			<h3>🤖 Inteligencia artificial</h3>
+			<ul>
+				<li><strong>Asistente de IA local</strong> (Meta+A) con el modelo Gemma 4 de Google: funciona sin internet y sin cuentas.</li>
+				<li>Crea <strong>documentos, presentaciones y hojas de cálculo</strong> a partir de lo que le pidas en español, y hace tareas del sistema: instalar programas, revisar la red o liberar espacio.</li>
+				<li>Si hay internet, busca información para completar sus respuestas, y puedes conectar con un clic una IA en línea más potente.</li>
+			</ul>
+
+			<h3>🪟📱 Windows y Android</h3>
+			<ul>
+				<li>Los <strong>programas de Windows</strong> (.exe y .msi) se abren con doble clic.</li>
+				<li><strong>Apps de Android</strong> en ventanas, junto al resto de programas.</li>
+			</ul>
+
+			<h3>🔄 Actualizaciones sin reinstalar</h3>
+			<ul>
+				<li>Repositorio de actualizaciones propio y <strong>firmado</strong>: las mejoras del sistema llegan por Discover junto a las de seguridad.</li>
+				<li>Las aplicaciones nuevas del sistema se instalan solas al actualizar, y las que se sustituyen se quitan.</li>
+			</ul>
+
+			<h3>⚡ Rendimiento</h3>
+			<ul>
+				<li>Memoria comprimida en RAM (zram) y ajustes de memoria para que el equipo no se trabe.</li>
+				<li>Si un programa agota la memoria, se cierra solo ese programa en vez de congelarse todo el equipo.</li>
+				<li>Control de temperatura del procesador en equipos Intel, para que no pierda velocidad al calentarse.</li>
+				<li>Red más rápida en wifi y conexiones lentas (BBR), y el modo de disco adecuado para NVMe, SSD o disco mecánico.</li>
+				<li>El buscador de archivos indexa solo los nombres: menos uso de procesador y de disco.</li>
+			</ul>
+
+			<h3>🎨 Escritorio y aplicaciones</h3>
+			<ul>
+				<li><strong>KDE Plasma 6.6</strong> sobre Ubuntu 26.04 LTS, con tema oscuro y guía de bienvenida.</li>
+				<li>Wayland de serie; si el equipo no lo admite bien, se elige X11 automáticamente al arrancar.</li>
+				<li>Gestos en el borde del touchpad para ajustar el brillo y el volumen.</li>
+				<li>Grabador de pantalla Kooha (Meta+R, en MP4) y reproductor mpv con aceleración por GPU.</li>
+				<li>LibreOffice, Firefox, Brave, GIMP, Inkscape, VLC, VS Code, Timeshift y herramientas de seguridad informática.</li>
+			</ul>
+
+			<h3>💿 Instalación</h3>
+			<ul>
+				<li>Instalador gráfico en español; puede instalarse junto a Windows.</li>
+				<li>Compatible con <strong>Secure Boot</strong> y con equipos UEFI y BIOS.</li>
+			</ul>
+
+			<h3>ℹ️ A tener en cuenta</h3>
+			<p class="aviso">Si instalaste el sistema desde la ISO publicada el 25 de octubre, activa las actualizaciones una sola vez abriendo una terminal y escribiendo:<br><code>curl -fsSL https://DavidAPF.github.io/D-A-Global-OS/instalar.sh | sudo bash</code></p>
+		</article>
+
+	</div>
+</section>
+
+<footer>
+	<div class="ancho">
+		<p><strong>D&amp;A Global OS</strong> · Versión 26.04.1</p>
+		<p><a href="index.html">Inicio</a> · <a href="https://github.com/DavidAPF/D-A-Global-OS">GitHub</a> · <a href="https://github.com/DavidAPF/D-A-Global-OS/issues">Reportar un problema</a></p>
+	</div>
+</footer>
+
+</body>
+</html>

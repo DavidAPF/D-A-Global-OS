@@ -76,7 +76,8 @@ h2 { font-size: clamp(26px, 4vw, 38px); text-align: center; margin: 0 0 12px; }
 .tarjeta p { margin: 0; color: var(--suave); font-size: 15.5px; }
 
 /* Capturas */
-.capturas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+.capturas { display: grid; grid-template-columns: 1.6fr 1fr; gap: 18px; align-items: center; }
+@media (max-width: 760px) { .capturas { grid-template-columns: 1fr; } }
 .capturas figure { margin: 0; }
 .capturas img { width: 100%; border-radius: 12px; border: 1px solid var(--borde); display: block; }
 .capturas figcaption { color: var(--suave); font-size: 14px; margin-top: 8px; text-align: center; }
@@ -155,19 +156,16 @@ footer a { color: var(--suave); }
 	</div>
 </section>
 
-<!-- CAPTURAS: añade imágenes en web/capturas/ y descomenta esta sección
 <section>
 	<div class="ancho">
 		<h2>Así se ve</h2>
 		<p class="sub">Capturas reales del sistema.</p>
 		<div class="capturas">
-			<figure><img src="capturas/escritorio.png" alt="Escritorio" loading="lazy"><figcaption>El escritorio</figcaption></figure>
-			<figure><img src="capturas/ia.png" alt="Asistente de IA" loading="lazy"><figcaption>El asistente de IA</figcaption></figure>
-			<figure><img src="capturas/tienda.png" alt="Tienda de aplicaciones" loading="lazy"><figcaption>La tienda de aplicaciones</figcaption></figure>
+			<figure><img src="capturas/escritorio.jpg" alt="Escritorio de D&amp;A Global OS" loading="lazy"><figcaption>El escritorio, limpio y con tema oscuro</figcaption></figure>
+			<figure><img src="capturas/menu.png" alt="Menú de aplicaciones" loading="lazy"><figcaption>El menú de aplicaciones, ordenado por categorías</figcaption></figure>
 		</div>
 	</div>
 </section>
--->
 
 <section id="instalar">
 	<div class="ancho">

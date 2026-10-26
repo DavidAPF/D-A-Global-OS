@@ -1,8 +1,214 @@
 <!doctype html>
+<html lang="es">
+<head>
 <meta charset="utf-8">
-<title>D&amp;A Global OS: actualizaciones</title>
-<h1>D&amp;A Global OS</h1>
-<p>Repositorio de actualizaciones. Versión actual: <b>26.04.1</b>.</p>
-<p>Para activar las actualizaciones en un equipo instalado antes de esta
-versión, abre una terminal y escribe:</p>
-<pre>curl -fsSL https://DavidAPF.github.io/D-A-Global-OS/instalar.sh | sudo bash</pre>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D&amp;A Global OS: el sistema operativo rápido y en español</title>
+<meta name="description" content="Sistema operativo gratis, rápido y en español. Escritorio KDE Plasma, IA que funciona sin internet, programas de Windows y apps de Android. Se actualiza con un clic.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="D&amp;A Global OS: tu computadora, más rápida y más lista">
+<meta property="og:description" content="Gratis y en español. IA sin internet, programas de Windows, apps de Android y actualizaciones con un clic.">
+<meta property="og:image" content="https://DavidAPF.github.io/D-A-Global-OS/compartir.png">
+<meta property="og:url" content="https://DavidAPF.github.io/D-A-Global-OS/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.png">
+<style>
+:root {
+	--fondo: #070d1a;
+	--fondo-2: #0c1628;
+	--tarjeta: #101d33;
+	--borde: #1d2f4f;
+	--texto: #e8eef8;
+	--suave: #9fb0c9;
+	--azul: #2f7bff;
+	--verde: #5ad13b;
+	--oro: #f2c14e;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+	margin: 0;
+	background: var(--fondo);
+	color: var(--texto);
+	font: 17px/1.6 system-ui, -apple-system, "Segoe UI", "Noto Sans", Roboto, sans-serif;
+}
+a { color: var(--verde); }
+.ancho { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Barra superior */
+nav { position: sticky; top: 0; z-index: 10; background: rgba(7,13,26,.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--borde); }
+nav .ancho { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.marca { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--texto); text-decoration: none; }
+.marca img { width: 34px; height: 34px; border-radius: 8px; }
+nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; }
+nav ul a { color: var(--suave); text-decoration: none; font-size: 15px; }
+nav ul a:hover { color: var(--texto); }
+
+/* Portada */
+.portada { position: relative; overflow: hidden; padding: 90px 0 80px; text-align: center; }
+.portada::before {
+	content: ""; position: absolute; inset: -40% -10% auto; height: 120%;
+	background: radial-gradient(closest-side, rgba(47,123,255,.35), transparent 70%),
+	            radial-gradient(closest-side at 70% 60%, rgba(90,209,59,.18), transparent 70%);
+	z-index: -1;
+}
+.portada img.logo { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 20px 60px rgba(47,123,255,.4); }
+.etiqueta { display: inline-block; margin: 26px 0 10px; padding: 4px 14px; border: 1px solid var(--borde); border-radius: 99px; color: var(--suave); font-size: 14px; }
+h1 { font-size: clamp(34px, 6vw, 60px); line-height: 1.1; margin: 10px 0 18px; letter-spacing: -.02em; }
+h1 span { background: linear-gradient(90deg, var(--azul), var(--verde)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.portada p.lema { max-width: 680px; margin: 0 auto 34px; color: var(--suave); font-size: 19px; }
+.botones { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 15px 30px; border-radius: 12px; font-weight: 700; text-decoration: none; background: linear-gradient(90deg, var(--azul), #1f9d6b); color: #fff; box-shadow: 0 10px 30px rgba(47,123,255,.35); }
+.btn:hover { filter: brightness(1.1); }
+.btn-sec { background: transparent; border: 1px solid var(--borde); box-shadow: none; color: var(--texto); }
+.btn-off { background: var(--tarjeta); color: var(--suave); box-shadow: none; cursor: default; }
+.nota { margin-top: 16px; color: var(--suave); font-size: 14px; }
+
+/* Secciones */
+section { padding: 70px 0; }
+section.alterna { background: var(--fondo-2); border-top: 1px solid var(--borde); border-bottom: 1px solid var(--borde); }
+h2 { font-size: clamp(26px, 4vw, 38px); text-align: center; margin: 0 0 12px; }
+.sub { text-align: center; color: var(--suave); max-width: 640px; margin: 0 auto 44px; }
+.rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+.tarjeta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 16px; padding: 24px; }
+.tarjeta .icono { font-size: 30px; }
+.tarjeta h3 { margin: 10px 0 6px; font-size: 19px; }
+.tarjeta p { margin: 0; color: var(--suave); font-size: 15.5px; }
+
+/* Capturas */
+.capturas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+.capturas figure { margin: 0; }
+.capturas img { width: 100%; border-radius: 12px; border: 1px solid var(--borde); display: block; }
+.capturas figcaption { color: var(--suave); font-size: 14px; margin-top: 8px; text-align: center; }
+
+/* Pasos */
+.pasos { counter-reset: paso; }
+.pasos .tarjeta { position: relative; padding-top: 52px; }
+.pasos .tarjeta::before {
+	counter-increment: paso; content: counter(paso);
+	position: absolute; top: 18px; left: 24px; width: 28px; height: 28px; border-radius: 50%;
+	background: var(--verde); color: #04110a; font-weight: 800; display: grid; place-items: center; font-size: 15px;
+}
+code, pre { font-family: ui-monospace, "Cascadia Code", "DejaVu Sans Mono", monospace; }
+pre { background: #050a14; border: 1px solid var(--borde); border-radius: 10px; padding: 14px 16px; overflow-x: auto; font-size: 14px; color: #cfe3ff; }
+.req { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 30px; }
+.req span { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 99px; padding: 6px 14px; font-size: 14px; color: var(--suave); }
+
+/* Preguntas */
+details { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+summary { cursor: pointer; font-weight: 600; }
+details p { color: var(--suave); margin: 10px 0 0; }
+.preguntas { max-width: 780px; margin: 0 auto; }
+
+footer { padding: 40px 0; text-align: center; color: var(--suave); font-size: 14px; border-top: 1px solid var(--borde); }
+footer a { color: var(--suave); }
+
+@media (max-width: 640px) {
+	nav ul { display: none; }
+	.portada { padding: 60px 0 50px; }
+	section { padding: 50px 0; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+	<div class="ancho">
+		<a class="marca" href="#"><img src="logo.png" alt="">D&amp;A Global OS</a>
+		<ul>
+			<li><a href="#funciones">Funciones</a></li>
+			<li><a href="#instalar">Instalar</a></li>
+			<li><a href="#preguntas">Preguntas</a></li>
+			<li><a href="https://github.com/DavidAPF/D-A-Global-OS">GitHub</a></li>
+		</ul>
+	</div>
+</nav>
+
+<header class="portada">
+	<div class="ancho">
+		<img class="logo" src="logo.png" alt="Logo de D&amp;A Global OS">
+		<div class="etiqueta">Versión 26.04.1 · Gratis · En español</div>
+		<h1>Tu computadora,<br><span>más rápida y más lista</span></h1>
+		<p class="lema">Un sistema operativo moderno con inteligencia artificial que funciona sin internet, tus programas de Windows y tus apps de Android. Se instala en minutos y se actualiza con un clic.</p>
+		<div class="botones">
+			<span class="btn btn-off">Descarga disponible muy pronto</span>
+			<a class="btn btn-sec" href="#instalar">Cómo instalarlo</a>
+		</div>
+		<p class="nota">Estamos dando los últimos toques a la primera versión pública.</p>
+	</div>
+</header>
+
+<section id="funciones" class="alterna">
+	<div class="ancho">
+		<h2>Todo lo que necesitas, desde el primer minuto</h2>
+		<p class="sub">Sin buscar programas, sin configurar nada y sin pagar licencias.</p>
+		<div class="rejilla">
+			<div class="tarjeta"><div class="icono">🤖</div><h3>IA sin internet</h3><p>Pídele en español que cree un documento, una presentación o una hoja de cálculo, o que configure el equipo. Funciona en tu computadora: tus datos no salen de ella.</p></div>
+			<div class="tarjeta"><div class="icono">🪟</div><h3>Programas de Windows</h3><p>Doble clic en un archivo .exe y se abre. Sin máquinas virtuales ni configuraciones raras.</p></div>
+			<div class="tarjeta"><div class="icono">📱</div><h3>Apps de Android</h3><p>Instala tus aplicaciones .apk y úsalas en ventanas, como cualquier otro programa.</p></div>
+			<div class="tarjeta"><div class="icono">🔄</div><h3>Se actualiza con un clic</h3><p>Las mejoras llegan a la tienda de aplicaciones. Le das a «Actualizar» y listo: nunca hay que reinstalar.</p></div>
+			<div class="tarjeta"><div class="icono">⚡</div><h3>Rápido de verdad</h3><p>Arranca en segundos, aprovecha mejor la memoria y le da nueva vida a equipos que con otros sistemas van lentos.</p></div>
+			<div class="tarjeta"><div class="icono">🎨</div><h3>Bonito y fácil</h3><p>Escritorio KDE Plasma con tema oscuro, gestos en el touchpad y una guía de bienvenida que te enseña lo básico.</p></div>
+			<div class="tarjeta"><div class="icono">📦</div><h3>Todo incluido</h3><p>LibreOffice, Firefox, Brave, GIMP, Inkscape, VLC, VS Code, grabador de pantalla y miles de apps más en la tienda.</p></div>
+			<div class="tarjeta"><div class="icono">🛡️</div><h3>Seguro y privado</h3><p>Sin virus de Windows, sin anuncios y sin recopilar tus datos. Incluye herramientas de seguridad informática para aprender y proteger tu red.</p></div>
+		</div>
+	</div>
+</section>
+
+<!-- CAPTURAS: añade imágenes en web/capturas/ y descomenta esta sección
+<section>
+	<div class="ancho">
+		<h2>Así se ve</h2>
+		<p class="sub">Capturas reales del sistema.</p>
+		<div class="capturas">
+			<figure><img src="capturas/escritorio.png" alt="Escritorio" loading="lazy"><figcaption>El escritorio</figcaption></figure>
+			<figure><img src="capturas/ia.png" alt="Asistente de IA" loading="lazy"><figcaption>El asistente de IA</figcaption></figure>
+			<figure><img src="capturas/tienda.png" alt="Tienda de aplicaciones" loading="lazy"><figcaption>La tienda de aplicaciones</figcaption></figure>
+		</div>
+	</div>
+</section>
+-->
+
+<section id="instalar">
+	<div class="ancho">
+		<h2>Instálalo en 3 pasos</h2>
+		<p class="sub">Puedes probarlo desde el USB sin tocar tu disco y, si te gusta, instalarlo junto a Windows o en lugar de él.</p>
+		<div class="rejilla pasos">
+			<div class="tarjeta"><h3>Descarga la ISO</h3><p>Pulsa el botón de descarga. Es un solo archivo con todo el sistema.</p></div>
+			<div class="tarjeta"><h3>Grábala en un USB</h3><p>Usa <a href="https://etcher.balena.io/">balenaEtcher</a> o <a href="https://rufus.ie/">Rufus</a> (en Windows) con un USB de 8 GB o más.</p></div>
+			<div class="tarjeta"><h3>Arranca e instala</h3><p>Reinicia desde el USB (tecla F12, F2 o Esc al encender) y pulsa «Instalar D&amp;A Global OS» en el escritorio.</p></div>
+		</div>
+		<div class="req">
+			<span>Procesador de 64 bits</span>
+			<span>4 GB de RAM (8 GB recomendado)</span>
+			<span>25 GB de disco</span>
+			<span>Compatible con Secure Boot</span>
+		</div>
+	</div>
+</section>
+
+<section id="preguntas" class="alterna">
+	<div class="ancho preguntas">
+		<h2>Preguntas frecuentes</h2>
+		<p class="sub">Y si tienes otra, <a href="https://github.com/DavidAPF/D-A-Global-OS/issues">escríbenos</a>.</p>
+		<details><summary>¿Es gratis?</summary><p>Sí, totalmente. Sin licencias, sin suscripciones y sin anuncios.</p></details>
+		<details><summary>¿Puedo probarlo sin instalarlo?</summary><p>Sí. Al arrancar desde el USB funciona en modo de prueba sin tocar tu disco. Si no te convence, reinicias y tu computadora sigue igual.</p></details>
+		<details><summary>¿Se borra Windows?</summary><p>Solo si tú lo eliges. El instalador detecta Windows y te deja instalar D&amp;A Global OS a su lado; al encender eliges cuál usar.</p></details>
+		<details><summary>¿Funcionará en mi computadora?</summary><p>Funciona en la gran mayoría de equipos de los últimos 10 años, con procesador Intel o AMD de 64 bits. Prueba primero desde el USB: si todo va bien ahí, irá bien instalado.</p></details>
+		<details><summary>¿La IA necesita internet o una cuenta?</summary><p>No. La IA viene incluida y funciona en tu propio equipo, sin internet y sin cuentas. Si quieres, puedes conectar una IA en línea más potente con un clic.</p></details>
+		<details><summary>¿Cómo se actualiza?</summary><p>Abre la tienda de aplicaciones (Discover) y pulsa «Actualizar». Las mejoras del sistema, los programas y los parches de seguridad llegan por ahí.</p></details>
+		<details><summary>¿En qué está basado?</summary><p>En Ubuntu 26.04 LTS con el escritorio KDE Plasma 6. Por eso es estable, tiene soporte de seguridad durante años y funciona con miles de programas para Linux.</p></details>
+		<details><summary>Ya lo tengo instalado, ¿cómo activo las actualizaciones?</summary><p>Si lo instalaste con una versión anterior al sistema de actualizaciones, abre una terminal y escribe:</p><pre>curl -fsSL https://DavidAPF.github.io/D-A-Global-OS/instalar.sh | sudo bash</pre></details>
+	</div>
+</section>
+
+<footer>
+	<div class="ancho">
+		<p><strong>D&amp;A Global OS</strong> · Versión 26.04.1</p>
+		<p><a href="https://github.com/DavidAPF/D-A-Global-OS">Código y repositorio en GitHub</a> · <a href="https://github.com/DavidAPF/D-A-Global-OS/issues">Reportar un problema</a></p>
+		<p>Basado en Ubuntu y KDE Plasma. Ubuntu es una marca de Canonical Ltd.; KDE es una marca de KDE e.V. Este proyecto no está afiliado a ellos.</p>
+	</div>
+</footer>
+
+</body>
+</html>

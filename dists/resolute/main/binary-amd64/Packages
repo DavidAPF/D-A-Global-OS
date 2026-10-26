@@ -7,11 +7,11 @@ Maintainer: D&A Global OS <dya-global-os@users.noreply.github.com>
 Installed-Size: 1752
 Depends: libkf6config-bin, python3
 Filename: pool/main/dya-global-base_26.04.1_all.deb
-Size: 1477512
-MD5sum: aa4d561b08aaa98ffb492efcdcfe953d
-SHA1: 83dba74432d0bcb46c6c0bf5260bd4e92b5cb5d7
-SHA256: 59d961a5dcc2998ac3febe6a2c56fa5436dc96ca57a0de33b747cc669530882e
-SHA512: 4b6f9f9cc599d963bb3353e46abf842c2c4dd4665a896fcc8c1d575a6dbddb604bc42e4b7a853358b73175ed362f0b920c288feb5cb3fa9c2f66250ec02d59a9
+Size: 1477480
+MD5sum: f6bec41f278c546fa126bec0dc212f25
+SHA1: a8c95cbd80edbb150886c249fbd67e28db38eb56
+SHA256: 95e20bb0911484154109dc44e59e1c1dabc99922e98b710cf52b3d98d5b9d746
+SHA512: 694c8027184a042140032ad46b91f68825ef6fecedfe93b396eba16212ecabbc091009f7c24e2b47426683929c8858d25dcea90cd2e24839d310746e0852ad2d
 Description: Configuración y programas de D&A Global OS
  Scripts dya-*, servicios, ajustes de rendimiento, tema y el repositorio
  de actualizaciones del sistema.
@@ -27,10 +27,10 @@ Recommends: linux-image-generic, systemd-sysv, sudo, locales, tzdata, keyboard-c
 Breaks: epiphany-browser, simplescreenrecorder, simplescreenrecorder-lib, dbus-x11
 Filename: pool/main/dya-global-os_26.04.1_all.deb
 Size: 2024
-MD5sum: d814a7bec8371dd1094f4ed70d6a3757
-SHA1: 6b53876209f469a5d89d5725a785d22c4dbf2c54
-SHA256: 2e37ae0e0e042f152138706fa90e6ba2b7c3e23fd3836a3083adbc1bb05768e3
-SHA512: a1d5af85580660180201bea6b9238e3096765bccabd0a403b4019791ce0bed3e90d359fd534143d1b6627e1448a0d487b064137a77311bf90d071e33054c9559
+MD5sum: ffcd084261f2c2e2a8c907f7bb8c0b52
+SHA1: c86a8d180be011a2255f70285fed42c733f5f761
+SHA256: 1af01c36b88b94e86a3c8528339edd99be90ad454c4c6112aaea25c7e02fb176
+SHA512: 60d191cc90533f69c5b76763a8bda62f4408960f8b891abd28cac33b7c274b2a4eac74da29ddce66bd2d5688dd2409223fa3c7adab7596a7e28908ee0597bd06
 Description: D&A Global OS (sistema completo)
  Instala y mantiene al día las aplicaciones de D&A Global OS. Al actualizar
  añade las aplicaciones nuevas del sistema y quita las sustituidas.

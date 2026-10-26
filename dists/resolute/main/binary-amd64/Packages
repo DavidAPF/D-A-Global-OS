@@ -1,0 +1,37 @@
+Package: dya-global-base
+Architecture: all
+Version: 26.04.1
+Priority: optional
+Section: misc
+Maintainer: D&A Global OS <dya-global-os@users.noreply.github.com>
+Installed-Size: 1752
+Depends: libkf6config-bin, python3
+Filename: pool/main/dya-global-base_26.04.1_all.deb
+Size: 1477512
+MD5sum: aa4d561b08aaa98ffb492efcdcfe953d
+SHA1: 83dba74432d0bcb46c6c0bf5260bd4e92b5cb5d7
+SHA256: 59d961a5dcc2998ac3febe6a2c56fa5436dc96ca57a0de33b747cc669530882e
+SHA512: 4b6f9f9cc599d963bb3353e46abf842c2c4dd4665a896fcc8c1d575a6dbddb604bc42e4b7a853358b73175ed362f0b920c288feb5cb3fa9c2f66250ec02d59a9
+Description: Configuración y programas de D&A Global OS
+ Scripts dya-*, servicios, ajustes de rendimiento, tema y el repositorio
+ de actualizaciones del sistema.
+
+Package: dya-global-os
+Architecture: all
+Version: 26.04.1
+Priority: optional
+Section: metapackages
+Maintainer: D&A Global OS <dya-global-os@users.noreply.github.com>
+Depends: dya-global-base (= 26.04.1)
+Recommends: linux-image-generic, systemd-sysv, sudo, locales, tzdata, keyboard-configuration, console-setup, dbus-user-session, zram-tools, unattended-upgrades, apt-utils, ca-certificates, bash-completion, command-not-found, nano, less, htop, fastfetch, curl, wget, unzip, xz-utils, openssh-client, network-manager, wpasupplicant, iproute2, iputils-ping, bind9-dnsutils, traceroute, whois, iperf3, kde-plasma-desktop, plasma-workspace, kwin-x11, kwin-wayland, plasma-session-wayland, plasma-session-x11, sddm, sddm-theme-breeze, kde-config-sddm, konsole, dolphin, dolphin-plugins, kde-cli-tools, systemsettings, plasma-nm, plasma-pa, powerdevil, bluedevil, kscreen, plasma-discover, plasma-discover-backend-flatpak, kde-config-screenlocker, plasma-systemmonitor, plasma-firewall, breeze, breeze-gtk-theme, ark, gwenview, kde-spectacle, okular, kcalc, kate, kinfocenter, xdg-desktop-portal-kde, qml-qt6, fonts-ubuntu, fonts-dejavu-core, plymouth, plymouth-theme-spinner, xserver-xorg-core, xserver-xorg-video-all, xserver-xorg-input-libinput, mesa-utils, pipewire-pulse, wireplumber, grub-efi-amd64, grub-efi-amd64-signed, grub-efi-amd64-bin, grub-pc-bin, grub2-common, shim-signed, efibootmgr, mokutil, os-prober, firefox, firefox-l10n-es-es, brave-browser, transmission-gtk, libreoffice-writer, libreoffice-calc, libreoffice-impress, libreoffice-gtk3, libreoffice-l10n-es, mpv, vlc, rhythmbox, kooha, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, gstreamer1.0-libav, gstreamer1.0-pipewire, ffmpeg, intel-media-va-driver, kio-extras, gimp, inkscape, synaptic, gparted, gnome-disk-utility, 7zip, unrar, baobab, power-profiles-daemon, thermald, systemd-oomd, pciutils, language-pack-es, hunspell-es, mesa-vulkan-drivers, timeshift, git, python3-pip, python3-venv, build-essential, code, nmap, ncat, masscan, arp-scan, wireshark, tshark, tcpdump, ngrep, socat, netcat-openbsd, lynis, nikto, sqlmap, hydra, john, hashcat, gobuster, aircrack-ng, macchanger, ufw, gufw, nftables, wireguard-tools, openvpn, tor, torsocks, gnupg, cryptsetup, keepassxc, bleachbit, zenmap, recon-ng, binwalk, radare2, gdb, strace, ltrace, wine64, flatpak, xdg-desktop-portal-gtk, yad, file, desktop-file-utils, cups, cups-filters, cups-browsed, system-config-printer, printer-driver-gutenprint, printer-driver-escpr, printer-driver-hpcups, hplip, avahi-daemon, llama.cpp-tools, python3, python3-odf, python3-openpyxl, python3-docx
+Breaks: epiphany-browser, simplescreenrecorder, simplescreenrecorder-lib, dbus-x11
+Filename: pool/main/dya-global-os_26.04.1_all.deb
+Size: 2024
+MD5sum: d814a7bec8371dd1094f4ed70d6a3757
+SHA1: 6b53876209f469a5d89d5725a785d22c4dbf2c54
+SHA256: 2e37ae0e0e042f152138706fa90e6ba2b7c3e23fd3836a3083adbc1bb05768e3
+SHA512: a1d5af85580660180201bea6b9238e3096765bccabd0a403b4019791ce0bed3e90d359fd534143d1b6627e1448a0d487b064137a77311bf90d071e33054c9559
+Description: D&A Global OS (sistema completo)
+ Instala y mantiene al día las aplicaciones de D&A Global OS. Al actualizar
+ añade las aplicaciones nuevas del sistema y quita las sustituidas.
+

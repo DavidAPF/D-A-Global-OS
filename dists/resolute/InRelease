@@ -1,0 +1,29 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64
+Codename: resolute
+Components: main
+Date: Mon, 26 Oct 2026 02:04:05 +0000
+Label: D&A Global OS
+Origin: D&A Global OS
+Suite: resolute
+MD5Sum:
+ 4067c9ab2290f3170d4d073c0f290959             4021 main/binary-amd64/Packages
+ cb2728cd6081754390cf1d7848c6d214             2073 main/binary-amd64/Packages.gz
+SHA1:
+ c58d8dbe7ca4076bc5364da609b455c11273eb5c             4021 main/binary-amd64/Packages
+ 54094cd6830809a81f411c730065a273d01eb5bf             2073 main/binary-amd64/Packages.gz
+SHA256:
+ 7f7065b67ca1ed0dd427373c7acea31c394f53dd4e65dc09a96e0ef1c8914918             4021 main/binary-amd64/Packages
+ bf7af0e97974ebf02f84c64a077fc2519f80c868d4cd6c73912aaf9caa094ced             2073 main/binary-amd64/Packages.gz
+SHA512:
+ 4773f7043b8da5d51c4f6f50c5d61c5af16edea0df15bdcb9bc0ceadf4523b8cf5671987f78e38e5cf74996b19c00d74b21c386f333f5d15702fdb9bcb7b72c6             4021 main/binary-amd64/Packages
+ a708c15891e3e093b26d9d4cbc72209bec89d09e306e1686797a268a31d820688f31497597ae601976efc11dbc386423dd11df5a2427e7ff1f78ccc1a10bae93             2073 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQR0fruRf3QbR+JiTlzBbBYvGTIb4gUCat61FQAKCRDBbBYvGTIb
+4nd5AP0fITkvdWQ2srT+hxd054I2LMURiQtfbPqqC9ntadKJHQD+IzquEkBYWptu
++IBwfo43IGLWEGVCClOm5IpGj9u69wI=
+=1Q2o
+-----END PGP SIGNATURE-----

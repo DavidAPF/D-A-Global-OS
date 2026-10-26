@@ -1,19 +1,19 @@
 Architectures: amd64
 Codename: resolute
 Components: main
-Date: Mon, 26 Oct 2026 02:36:12 +0000
+Date: Mon, 26 Oct 2026 03:43:48 +0000
 Label: D&A Global OS
 Origin: D&A Global OS
 Suite: resolute
 MD5Sum:
  b0017254b464e8d08ebd151063cfb7bc             4021 main/binary-amd64/Packages
- fe17793af6d7bd9daf8955189b613d1e             2072 main/binary-amd64/Packages.gz
+ be272c902741618cb98c7584568f5023             2072 main/binary-amd64/Packages.gz
 SHA1:
  cac636bbb639b944d0266614e21accaf5cae8723             4021 main/binary-amd64/Packages
- 216a45a29cde137406be64083b1442886733c1ef             2072 main/binary-amd64/Packages.gz
+ 1b5912ec62764f16d0c292660d1d98a1e93541ff             2072 main/binary-amd64/Packages.gz
 SHA256:
  fe467990ac13c00b04055fdd4aabcae0b0cc3e0b5be0a0482c52db90abce3820             4021 main/binary-amd64/Packages
- 9925a19830d1bda517d75130e12bf0f213464f5f522c0b4c7240b352317e3565             2072 main/binary-amd64/Packages.gz
+ 9ef08aea77a8ff8beaa51cef80ccef0f81932a10eaabf8da9d22889818d3e976             2072 main/binary-amd64/Packages.gz
 SHA512:
  0820c515b63cbc008b692ddd891d491a66fb25a49f1c4f499945e918708aabfe5c49e987a1de27c2eaebec0f609859f5caf51f4e6ceea9af483b6e67ddb53d89             4021 main/binary-amd64/Packages
- 8d12b916489e6276b0782d844487d34f14b242250287a822100d70418ac64fe3f9a2fc46d6b5be8c1cb2d63a06098b39e4c8b2fa896f0182c41aff22bcd2f302             2072 main/binary-amd64/Packages.gz
+ c35a0bbd8763374ba084f711c3e55b6cfe6e575d4e0a42dd1db1412a89fac3a8e20d8acd79f582c6bb1b71d5b456e53c0c05d1b3e2ddef940c1b3ffab4ccae3c             2072 main/binary-amd64/Packages.gz

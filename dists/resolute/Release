@@ -1,19 +1,19 @@
 Architectures: amd64
 Codename: resolute
 Components: main
-Date: Wed, 28 Oct 2026 20:48:27 +0000
+Date: Wed, 28 Oct 2026 21:27:48 +0000
 Label: D&A Global OS
 Origin: D&A Global OS
 Suite: resolute
 MD5Sum:
- 8a915040e56e777956b44843ef3491ea             8042 main/binary-amd64/Packages
- fbbd99f03d7752758244fb07ef3f7c66             2497 main/binary-amd64/Packages.gz
+ 340abdd0bdc552d97f877a2243643a03            12063 main/binary-amd64/Packages
+ f8bf0f96cff34b4a0c9fa8fd3a95694c             2913 main/binary-amd64/Packages.gz
 SHA1:
- 9c6baa643cd5b089720095176f479c90d417b6bf             8042 main/binary-amd64/Packages
- 58a574721c49e19d23e5ca115006a9b8315b77fd             2497 main/binary-amd64/Packages.gz
+ fc716fb5987e998ea8a01a0e97950626cd9a2630            12063 main/binary-amd64/Packages
+ 6e9beb18d649c08ff85f9fc5706db908017edbba             2913 main/binary-amd64/Packages.gz
 SHA256:
- eeeed486114117187fb70eb05a6a4b2491aaf533a29b7ed69ee50b2312477658             8042 main/binary-amd64/Packages
- abef946516bda0da946f05b6923cfdcfdec2239bba21551cafb0dcc3dacb1665             2497 main/binary-amd64/Packages.gz
+ 3d103a45eff36e25421aa894bb9629955f2985fcd671ede0188c0ae3aa546ca8            12063 main/binary-amd64/Packages
+ 200bb136d985a549b44c95762886ef31a815e54569a14552fafb19b60e6fea85             2913 main/binary-amd64/Packages.gz
 SHA512:
- f213040072599b2e7a97959ad667b00c28b271e41692a6a1297a4db46b88a91eb3f4bf6fa3aa4a4e128a3dc598ec4543fd300cd324269a9124ada1fd27abdd53             8042 main/binary-amd64/Packages
- db5aa4a11616c9eeac965a3d1f9cfaae035a787d289de354cd0f87bab0f9e12552c75a8d5f2eb94cb754cb4fa243b85ed00425b099a786b308c4a021739e383f             2497 main/binary-amd64/Packages.gz
+ 4e00267045fc5d92981d6dfee528d049bb24589629f8b92a833d4573a044bc39e9c6463af91c4351715c9935201a9e3f0b0775b69aab4f6fb5a88a0aae2b54ea            12063 main/binary-amd64/Packages
+ a26b0396b34f5a296a2a7d079c14c643febe8b917bd798a8ef33bbc69d63ca7240943245d3fa0a598957ff223875404882ed2d595807225f2f3acaf76f27012b             2913 main/binary-amd64/Packages.gz

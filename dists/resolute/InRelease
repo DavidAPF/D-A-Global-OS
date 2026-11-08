@@ -4,26 +4,26 @@ Hash: SHA512
 Architectures: amd64
 Codename: resolute
 Components: main
-Date: Sun, 08 Nov 2026 03:09:56 +0000
+Date: Sun, 08 Nov 2026 03:13:48 +0000
 Label: D&A Global OS
 Origin: D&A Global OS
 Suite: resolute
 MD5Sum:
- 6969d3634442e6b6d16e4369bbc215d9            13155 main/binary-amd64/Packages
- 3a2296621dfde9cc15eac0cb579b253e             3088 main/binary-amd64/Packages.gz
+ 1f3d53dc2681431a134f74262f953852            13155 main/binary-amd64/Packages
+ e1d9a23d629e9ac214789f16244b1d94             3087 main/binary-amd64/Packages.gz
 SHA1:
- 355303cb391a6b17a815bdc337445e60ab27a4e8            13155 main/binary-amd64/Packages
- 97296ecd1e442a8986ffd68f8a63e96f80ebeb71             3088 main/binary-amd64/Packages.gz
+ d827224c1d4e4018f1728280ad46e6e2af7f4b8a            13155 main/binary-amd64/Packages
+ 007493989c1a77cb8a6c4a20c35722152ef0cf99             3087 main/binary-amd64/Packages.gz
 SHA256:
- b15431e0ffd38913ba4bc225444b50eed4086ad764e74edd2a6023660842b26a            13155 main/binary-amd64/Packages
- a950df428dc799bc3bcbac16575c9ac7023b7be66233b5ef6de5d7b87bfba6f6             3088 main/binary-amd64/Packages.gz
+ 2bd38be1900bec758b754bfb250479ed01ceb97cc47bce752d937babe89643f2            13155 main/binary-amd64/Packages
+ 2cd2914c8da054826b662e5bf9ccba771627599c722d2b5fac3741ec940ca90d             3087 main/binary-amd64/Packages.gz
 SHA512:
- a37f3534487a3aaf77b62fe459ee4f1593f4c1581297b41839ec2e491e0df38ede1a371a4a1055417e2f74a51863970a3c9b759b3568619292cff6929349e488            13155 main/binary-amd64/Packages
- b96957e8aeda2a8aa3a069f265cea5a39eb68eb21d44a6e585802bd362c14d79ca6d5d7e7cc0ba1b2abc5cf27c4ed1f3f5ff58c87ec41eec67607f1bbc8c25fc             3088 main/binary-amd64/Packages.gz
+ 95fcc3bbd19385bc57d2179fb6b6fb72f1a7ef431e0076cdd7720b60dee6b93551883b763a5ab7a38e9656cd5afcfc75c88d9001765c9cfe72876a126b8e3f62            13155 main/binary-amd64/Packages
+ 6c7f5a8187403409e1aac4847705aa755791818b1f3e0011b37bcf387799cc601575de86fce401bb88ad58b77cb3f1e422c17753eda2e1775104ca2dd8541a00             3087 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQR0fruRf3QbR+JiTlzBbBYvGTIb4gUCau/oBAAKCRDBbBYvGTIb
-4qGKAQDcxTOr9Bo2Ohnei13obWwt4SEbUrYtKQ8+RezVyJnooQD/SJPubVsN5Oho
-UmkPeG5LeCrZAAlZ82h/9nkMPiiahQQ=
-=4ApG
+iHUEARYKAB0WIQR0fruRf3QbR+JiTlzBbBYvGTIb4gUCau/o7AAKCRDBbBYvGTIb
+4hZPAQDOai6/UigrIaRlWrvrD9G8XvMsRuizMSzG6ldigaDogAEAk1RElEagDRtA
+e1+VHMOBmnqZqC34U866vw2XIG2/yAM=
+=B189
 -----END PGP SIGNATURE-----

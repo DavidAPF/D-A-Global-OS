@@ -7,7 +7,7 @@ El sistema operativo rápido, bonito y en español.
 - **Programas de Windows** (.exe) y **apps de Android**
 - **Se actualiza con un clic** desde Discover, sin reinstalar nunca
 
-Versión actual: **26.04.17**
+Versión actual: **26.04.18**
 
 ## Activar las actualizaciones
 

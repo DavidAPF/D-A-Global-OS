@@ -4,26 +4,26 @@ Hash: SHA512
 Architectures: amd64
 Codename: resolute
 Components: main
-Date: Sun, 08 Nov 2026 02:43:25 +0000
+Date: Sun, 08 Nov 2026 03:09:56 +0000
 Label: D&A Global OS
 Origin: D&A Global OS
 Suite: resolute
 MD5Sum:
- 1144b61ead331bec7a0e1291ef4753ef            13155 main/binary-amd64/Packages
- a285afbf9ef8ece5f0bbaac54bc04b90             3079 main/binary-amd64/Packages.gz
+ 6969d3634442e6b6d16e4369bbc215d9            13155 main/binary-amd64/Packages
+ 3a2296621dfde9cc15eac0cb579b253e             3088 main/binary-amd64/Packages.gz
 SHA1:
- 53eff1fa857cd7f27223e73f5f4d3ac4e9d6be66            13155 main/binary-amd64/Packages
- bdb09d05c5379c45f431f66f05f448340d8cd5b3             3079 main/binary-amd64/Packages.gz
+ 355303cb391a6b17a815bdc337445e60ab27a4e8            13155 main/binary-amd64/Packages
+ 97296ecd1e442a8986ffd68f8a63e96f80ebeb71             3088 main/binary-amd64/Packages.gz
 SHA256:
- e17044f3b99b3a5d53249b9e059319d7c4ed8f964548c980dc0c1e7984683555            13155 main/binary-amd64/Packages
- 3fa05bdca960589491b29e9d3bb09c71bcdfec52b0c687fec5bfe06db0fabae1             3079 main/binary-amd64/Packages.gz
+ b15431e0ffd38913ba4bc225444b50eed4086ad764e74edd2a6023660842b26a            13155 main/binary-amd64/Packages
+ a950df428dc799bc3bcbac16575c9ac7023b7be66233b5ef6de5d7b87bfba6f6             3088 main/binary-amd64/Packages.gz
 SHA512:
- 7762f3e2084827e7b21305a4f10642bc6dc1116664eac45d431f65933d0ce453f3f94c2ea6f958302afa95a6f091cead561b82a357fcceec701c0a279322276e            13155 main/binary-amd64/Packages
- f798f515116a9d87dc63e0d5f4e2267bab12a0608b5258812302449caeebe27798de15d8978ad260d52590c60549d5b5e9aa921645ad528cbef0ce573196e8d8             3079 main/binary-amd64/Packages.gz
+ a37f3534487a3aaf77b62fe459ee4f1593f4c1581297b41839ec2e491e0df38ede1a371a4a1055417e2f74a51863970a3c9b759b3568619292cff6929349e488            13155 main/binary-amd64/Packages
+ b96957e8aeda2a8aa3a069f265cea5a39eb68eb21d44a6e585802bd362c14d79ca6d5d7e7cc0ba1b2abc5cf27c4ed1f3f5ff58c87ec41eec67607f1bbc8c25fc             3088 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQR0fruRf3QbR+JiTlzBbBYvGTIb4gUCau/hzQAKCRDBbBYvGTIb
-4o4TAQD4k+haQj0M38hj5+78tUzvWmOJg1h4sWgnStlXtr96lAD8DRq+RVPuZQ1W
-o363a0XsNk5kBL1Rhnisw4L623BaKQ0=
-=md/Y
+iHUEARYKAB0WIQR0fruRf3QbR+JiTlzBbBYvGTIb4gUCau/oBAAKCRDBbBYvGTIb
+4qGKAQDcxTOr9Bo2Ohnei13obWwt4SEbUrYtKQ8+RezVyJnooQD/SJPubVsN5Oho
+UmkPeG5LeCrZAAlZ82h/9nkMPiiahQQ=
+=4ApG
 -----END PGP SIGNATURE-----
